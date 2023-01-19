@@ -1,0 +1,422 @@
+.body {
+  
+  padding: 0;
+  margin: 0;
+  padding-top: 60px;
+  position: relative;
+}
+
+p {
+  font-family: Arial;
+  font-weight: 700;
+}
+
+* {
+  font-family: Arial;
+}
+
+header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 4px solid rgb(0, 0, 0);
+  background-image: url(minecraft/grass.webp);
+  background-repeat: repeat;
+  background-size: auto 100%;
+}
+
+.backgrounds {
+  background-color: rgba(255, 0, 0, 0.14);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -4;
+}
+
+.backgrounds div {
+  background-color: rgb(106, 174, 226);
+  height: 600px;
+}
+
+.backgrounds img {
+  top: 100px;
+  opacity: .8;
+  position: absolute;
+  width: 600px;
+}
+
+
+
+.site-name {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.391);
+  background-color: rgba(33, 33, 33, 0.63);
+  padding: 5px 10px;
+  border-radius: 10px;
+
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+.search-box {
+  background-color: white;
+  display: flex;
+  box-shadow: inset 1px 1px 4px rgba(98, 98, 98, 0.666), 2px 2px 10px rgba(0, 0, 0, 0.294);
+  height: 40px;
+  border: 2px solid black;
+}
+
+.search-bar {
+  width: 350px;
+  height: 100%;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  padding-left: 15px;
+}
+.search-button {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  border-radius: 50px;
+}
+
+.search-button:hover {
+  background-color: rgba(80, 80, 80, 0.163);
+}
+
+.search-button img {
+  height: 80%;
+}
+
+.date {
+  font-size: 30px;
+}
+
+.picture {
+  opacity: .9;
+  filter: blur(100%);
+  width: 200px;
+  transition: 0.18s;
+}
+
+.picture:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.main-box {
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+.sky {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.sky .background {
+  width: 100%;
+}
+
+.page-title {
+  position: absolute;
+  top: 150px;
+  left: 30%;
+  font-size: 100px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-weight: 700;
+  background-color: rgba(5, 145, 0, 0.601);
+  padding: 10px 25px;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 30px black;
+}
+
+@keyframes danny {
+  from {right: -700px;}
+  to {right: -300px;}
+}
+
+@keyframes kurtis {
+  from {left: -500px;}
+  to {left: -160px;}
+}
+
+.danny {
+  right: -300px;
+  bottom: 0;
+  position: absolute;
+  opacity: .8;
+  height: 640px;
+  animation-name: danny;
+  animation-duration: 1.8s;
+}
+
+.kurtis {
+  left: -160px;
+  bottom: -120px;
+  position: absolute;
+  opacity: .8;
+  height: 800px;
+  animation-name: kurtis;
+  animation-duration: 1.8s;
+}
+
+.dirt {
+  background-image: url(minecraft/true/dirt.PNG);
+  background-repeat: repeat;
+  background-size: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.dirt .top {
+  background-image: url(minecraft/true/grass.png);
+  height: 100px;
+  background-size: auto 100%;
+}
+
+.nether {
+  background-image: url(minecraft/true/netherrack.png.PNG);
+  background-repeat: repeat;
+  background-size: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.nether .top {
+  background-image: url(minecraft/true/nether_gold_ore.png.PNG);
+  height: 100px;
+  background-size: auto 100%;
+}
+
+.end {
+  background-image: url(minecraft/true/end_stone.png.PNG);
+  background-repeat: repeat;
+  background-size: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.end .top {
+  background-image: url(minecraft/true/end_stone_bricks.png.PNG);
+  height: 100px;
+  background-size: auto 100%;
+}
+
+.stream-container {
+  display: grid;
+  grid-template-columns: 1fr 130px;
+  width: 650px;
+  height: 320px;
+  background-color: rgba(57, 57, 57, 0.916);
+  /* border: 2px solid black; */
+  /* border-radius: 50px; */
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px 30px;
+  left: 50%;
+  position: relative;
+  margin-bottom: 100px;
+  background-image: url(minecraft/planks.webp);
+  background-size: auto 33.3333%;
+  background-repeat: repeat;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.705), inset 0 0 10px rgba(0, 0, 0, 0.502);
+  transition: margin-bottom .5s;
+}
+
+.stream-container.hide {
+  display: none;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 37%;
+}
+
+.title {
+  position: absolute;
+  top: -50px;
+  left: 10%;
+  background-color: rgb(208, 208, 208);
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.496) ,inset 1px 1px 10px rgba(0, 0, 0, 0.6);
+  border: 3px solid black;
+  font-family: Arial;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.stream-container:hover .title {
+  transform: scale(1.05);
+}
+
+.stream-container:hover .thumbnail {
+  transform: scale(1.0) translate(0, 15px);
+}
+
+.stream-container.down {
+  margin-bottom: 300px;
+}
+
+.thumbnail {
+  width: 100%;
+  align-items: center;
+  right: 0;
+  z-index: 4;
+  transition: transform 0.2s;
+  border-radius: 5px;
+  transform: scale(1.1) translate(55px, 13px);
+}
+
+.player-list {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+
+  /* border: 1px solid rgb(176, 0, 0); */
+}
+
+.pfp {
+  height: 80px;
+  border-radius: 50px;
+  transform: translateX(-150px);
+  transition: transform 0.3s;
+  filter: grayscale(50%);
+}
+
+.stream-container:hover .pfp {
+  transform: translateX(0px);
+}
+
+.channel-button {
+  position: relative;
+  height: 80px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-button,
+.vod-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: transform 0.15s, opacity 0.15s;
+  z-index: 2;
+  /* box-shadow: inset 1px 1px 10px rgba(255, 0, 0, 0.6); */
+}
+
+.highlight-button {
+  top: -18px;
+  border: 2px solid red;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(30px);
+  color: black;
+}
+
+.vod-button {
+  bottom: -18px;
+  border: 2px solid purple;
+  background-color: rgba(163, 85, 228, 0.95);
+  color: white;
+  transform: translateY(-30px);
+}
+
+.highlight-button img,
+.vod-button img {
+  height: 20px;
+}
+
+.channel-button:hover .highlight-button,
+.channel-button:hover .vod-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.channel-button:hover .pfp {
+  filter: grayscale(0%);
+}
+
+.channel-button p {
+  margin: 0;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.disc-button {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  border: 2px solid black;
+  background-color: rgb(218, 218, 218);
+}
+
+.disc-button img {
+  height: 100%;
+}
+
+.description {
+  position: absolute;
+  top: 150px;
+  bottom: -20px;
+  left: 45px;
+  right: 45px;
+  background-color: rgb(208, 208, 208);
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 50px 15px 25px 15px;
+  transition: transform .7s, bottom 1s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.description.down {
+  transform: translateY(190px);
+}
+
+/* .description-item {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.description-item::before {
+  content: "-";
+} */

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Baddie Smp</title>
+    <link rel="stylesheet" href="general.css">
+    <base target="_blank">
+  </head>
+  <body class="body">
+    <header>
+      <div class="site-name">BaddieSmp</div>
+      <div class="search-box">
+        <input class="search-bar" type="text" placeholder="Search for Jokes/Moments">
+        <button onclick="search()" class="search-button">
+          <img src="icons/search.svg" alt="">
+        </button>
+      </div>
+    </header>
+    <!-- <div class="backgrounds">
+      <img class="danny" src="thumbnails/danny.png" alt="">
+      <img class="kurtis" src="thumbnails/kurtis.png" alt="">
+      <div></div>
+    </div> -->
+    <div class="main-box">
+      <div class="sky">
+        <img class="background" src="backgrounds/sky.png" alt="">
+        <img class="danny" src="backgrounds/danny.png" alt="">
+        <img class="kurtis" src="backgrounds/kurtis (2).png" alt="">
+        <div class="page-title">Baddie SMP</div>
+      </div>
+
+      <div class="dirt">
+        <div class="top"></div>
+
+        <div id="video1" class="stream-container left">
+          <div class="title">Danny shows Kurtis the ropes 2021.03.24</div>
+          <img class="thumbnail" src="thumbnails\baddie1.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=hB6Zt4UL370">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://youtu.be/q8mtT8EoFjk">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=XXxydNATo90">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://youtu.be/Wh9rfJ-PSAA">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+           <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            diamond bathing suit, shes on the crafting table, edging button, everybody loves raymond, kurtis is a boney sandy guy, danny fart, kurtis steals diamonds, no girls allowed, mtv cribs, baby zombie, let's rob someone, so we back in the mine, you baited him, spiderman on the roof, iron daddy, is that a chicken, he died the same way he lived, epic creeper cave, hes besting me
+          </div>
+        </div>
+        
+        <div id="video2" class="stream-container right">
+          <div class="title">Going treasure hunting 2021.03.31</div>
+          <img class="thumbnail" src="thumbnails/kurtis2.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://youtu.be/V0MDVtnrP-o">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://youtu.be/hIfoTVVLUaE">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://youtu.be/D5wgQoTiAOM">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://youtu.be/ToLkDKIz7p0">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+            <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            kurtis gets a new skin magic mike, kill danny origin, text to speech, hoodwink origin, cave dragon dilf, ore iron nah iron ore nah, water clutch splash, chat what is this, sandwich, seedy place, can't make a hoe out of a boat, buried treasure, guch check, pirate king, grandma chat check, turn into the joker, messy hole, danny fails water clutch, inside you as a homie, lapis lazuli, dream and nightmare(wet dream), die in lava, i got my iron pants on tonight dancing hella cool in my mind, minecraft parody song, hard rock nick, the new nutcracker mob hit kurtis danny hit kurtis, not bad conner, kurtis pranks danny 
+          </div>
+        </div>
+        
+        <div id="video3" class="stream-container left">
+          <div class="title">Minecraft Property Brothers 2021.04.07</div>
+          <img class="thumbnail" src="thumbnails/kurtis3.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=g6I2AWlCWic">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=iqukBYAyLkw&">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=1RhGve7pxxk">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=kMjDQTXgbsE">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+          <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            you unhoed my spot, text-to-speech, me and my friend kurt live here mmlmmdllmdla, reverse cowgirl, fairweather fans, danny stole helmet, cows might seem inhumane, f as in funny of stuff in my hands, im on and island dua lipa, baby sheep, bed swap, i made another animal, danny leaves the smp, i got scared freaked out and scared, hoodwinked, arts and crafts, dirty house, glass floors, i got glass in my pocket, cock fight, kelp life hack kelp lifehack, shut the hell up, no matter what you say or what you do ill be right by your side till 3005 hold up, leggy plants, sea pickle, daddylands badlands, might have a snitch situation on my hands, get me out of here
+          </div>
+        </div>
+        
+        <div id="video4" class="stream-container right">
+          <div class="title">Civil War 2021.04.14</div>
+          <img class="thumbnail" src="thumbnails/danny4.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://youtu.be/NgzeHFtDfHo">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=OK-we_FSqsE">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=k5o7rVx8xrQ">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=M1u4ewEwuqs">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+            <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            underwater skeleton, kill danny, 2 shakes danny drinks shakes, its a speedrun its not a sprint its a marathon, shut the hell up, ill see you a nether time, hype beasts, you like john? who is john, oh heather bring me to the nether, danny falls into a lava ravine, come on danny, nerd's room, a want to be streaming to an audience of none, nerds only, creeper!, that was pog, signs, i was just going to propose, sticky keys sticky enough after this truce
+          </div>
+        </div>
+
+        
+        
+      </div>
+
+      <div class="nether">
+        <div class="top"></div>
+
+        <div id="video5" class="stream-container left">
+          <div class="title">Where are the blaze rods 2021.04.21</div>
+          <img class="thumbnail" src="thumbnails/kurtis5.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=T7yVg6tL-RQ">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=DvrEbK0xAmI">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=bv0O1wMojjc">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=rfmNANxsobI">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+           <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            in love with a creeper, lets teach em biology, creeper in the sheep pit, dance with me creeper, more like terriblecotta, chat crying, logic the rapper, booty call bell, doorbell knock knock delivery ups man, he was asleep, i smell like beef, nether bastion, danny eat nothing, bestie make mushroom soup i think im about to make cream of mushroom, portal at base, hype train bing bing, dream about creepers, song
+          </div>
+        </div>
+        
+        <div id="video6" class="stream-container right">
+          <div class="title">Finding the nether fortress 2021.04.28</div>
+          <img class="thumbnail" src="thumbnails/danny6.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=EqKMc1tv-q0">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=SBDnBIVnlro">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=qQJu6Fcye_k">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=Gt-2-PYLyWQ">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+            <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            pay no attention to my desktop background, chill zone, silky touch, am i a chicken?, i think im about to make chicken noodle soup, anvil check, glowstone, tac light, chain bed, chains and whips excite me, kinky kurt, pigs cant open doors right?, ever seen this before, dick chainy, nether fortress, blaze rod, i don't have any food, cave by the ocean
+          </div>
+        </div>
+        
+        <div id="video7" class="stream-container left">
+          <div class="title">Enderman in da house 2021.05.05</div>
+          <img class="thumbnail" src="thumbnails/danny7.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=JFlVAcK10OE">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=ltPb7ih7RqU">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=O9-NsLh8ehQ">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=g2e7BDCiLxc">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+          <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            happy birthday kurtis, iron naw, 420, that was pog, i wouldn't lie about josh peck robe, everytime we touch i turn to cheese, diamond mode activated, wheres the megan love, making cake, shawn white, chill zone, throwing that cake, nether, boat trick, running im running im running, hoodwink, bridgeable spot, you're about to make me lose my marbles
+          </div>
+        </div>
+        
+        <div id="video8" class="stream-container right">
+          <div class="title">Trading with the pigs 2021.05.12</div>
+          <img class="thumbnail" src="thumbnails/danny8.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=_5oY9sjWEOE">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=vqw7wJnLbpw">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=QKcgB0SQWCM">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=C1wE81HoyIw">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+            <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            danny gets approved for partner affiliate, call twitch call jeff bezos, double partner, date jeff bezos, turtle, bill gates, jeremy renner, newspaper, silk touch, beyoncee, josh peck on the cheek,
+          </div>
+        </div>
+        
+        <div id="video9" class="stream-container left">
+          <div class="title">BOAT CREEPER 2021.05.26</div>
+          <img class="thumbnail" src="thumbnails/danny9.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=2GBcvd84UqU">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=Br_oxWX6NwA">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=oxQFIj_gsOw">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=Ykbl2xJ5BtU">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+          <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            danny gets attacked by a bird feathery smack, phantoms, turtle, queen elizabeth, ariana grande yuh, mcc minecraft college, lose my marbles, vaccine bill gates jeff bezos, the world is so cruel, doug ford, lets go, hot tourist destinations, reverse psychology manifesting
+          </div>
+        </div>
+
+      </div>
+
+      <div class="end">
+        <div class="top"></div>
+        
+        <div id="video10" class="stream-container right">
+          <div class="title">The END 2021.06.02</div>
+          <img class="thumbnail" src="thumbnails/kurtis10.jpg">
+          <div class="player-list">
+            <div class="channel-button">
+              <img class="pfp" src="profiles\danny.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=alj2kaWsidY">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=1fK1DFGc7uc">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+            <div class="channel-button">
+              <img class="pfp" src="profiles/kurtis.jpg" alt="">
+              <a class="highlight-button" href="https://www.youtube.com/watch?v=J70js4vfFDM">
+                <img src="icons/youtube.png" alt="">
+                <p>Highlight</p>
+              </a>
+              <a class="vod-button" href="https://www.youtube.com/watch?v=taMX7JEwvPc">
+                <img src="icons/twitch.png" alt="">
+                <p>VOD</p>
+              </a>
+            </div>
+          </div>
+          <button onclick="dropdown(this.parentElement.id)" class="disc-button">
+            <img src="icons/down.png" alt="">
+          </button>
+          <div class="description">
+            kurtis kills the dragon, arrow and sword i think, twerk on me while im down, dig strait down, stronghold, end portal, if you don't think we got this on lock then you need to shut the hell up, water bucket trick, josh peck, yeah yeah, beating the ender danny, nothing gets me harder than this, drew gooden, end city, elytra, shulker
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+     
+
+    </div>
+  </body>
+  <script src="code.js"></script>
+</html>
